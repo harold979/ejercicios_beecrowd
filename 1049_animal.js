@@ -8,7 +8,6 @@ let clase = lines.shift().trim()
 let nombre = lines.shift().trim()
 
 
-
 if (columas == 'vertebrado' && clase == 'ave' && nombre == 'carnivoro') {
     animal = 'aguia'
 }
