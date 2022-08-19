@@ -50,8 +50,6 @@ if (columas == 'invertebrado' && clase == 'anelideo' && nombre == 'onivoro') {
 console.log(animal);
 
 
-
-
 /* if (columas == 'vertebrado') {
     if (clase == 'ave') {
         if (nombre == 'carnivoro') {

@@ -3,6 +3,7 @@ var lines = input.split('\n');
 
 let n = parseFloat(lines.shift());
 
+
 if (n >= 0 && n <= 400.00) {
     let aumento = n * (15 / 100);
     let total = n + aumento
