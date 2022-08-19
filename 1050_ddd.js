@@ -62,7 +62,6 @@ else if (n==31){
 else{
     console.log("DDD nao cadastrado")
 } */
-    
 
 
 
