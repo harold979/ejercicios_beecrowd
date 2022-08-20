@@ -1,7 +1,5 @@
-
-var input = require('fs').readFileSync('dev/stdin', 'utf8');
-var lines = input.split('\n');
-
+var input = require("fs").readFileSync("dev/stdin", "utf8");
+var lines = input.split("\n");
 
 /* const prod1 = {codigo: 1, nome:'Cachorro Quente', preco: 4.00};
 const prod2 = {codigo: 2, nome:'X-Salada', preco: 4.50};
@@ -30,26 +28,26 @@ var result = 0;
         console.log("Total: R$ "+parseFloat(result.toFixed(2)));
     } */
 
-    
-const [code, quantities] = input.map(Number)
+const [code, quantities] = input.map(Number);
 
 function cost(ProductID, quantity, Products) {
-	const Product = Products.get(ProductID)
-	const value = quantity * Product
-	return value
+  const Product = Products.get(ProductID);
+  const value = quantity * Product;
+  return value;
 }
 
 function main() {
-	const Product = [[1, 4.00], [2, 4.50], [3, 5.00], [4, 2.00], [5, 1.50]] // [[ID, value]]
-	const ProductMap = new Map(Object(Product))
-	const Total = cost(code, quantities, ProductMap)
+  const Product = [
+    [1, 4.0],
+    [2, 4.5],
+    [3, 5.0],
+    [4, 2.0],
+    [5, 1.5],
+  ]; // [[ID, value]]
+  const ProductMap = new Map(Object(Product));
+  const Total = cost(code, quantities, ProductMap);
 
-	console.log(`Total: R$ ${Total.toFixed(2)}`)
+  console.log(`Total: R$ ${Total.toFixed(2)}`);
 }
 
-main()
-
-       
-
-
-
+main();

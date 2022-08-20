@@ -1,51 +1,45 @@
-var input = require('fs').readFileSync('dev/stdin', 'utf8');
-var lines = input.split('\n');
+var input = require("fs").readFileSync("dev/stdin", "utf8");
+var lines = input.split("\n");
 
+let columas = lines.shift().trim();
+let clase = lines.shift().trim();
+let nombre = lines.shift().trim();
 
-
-let columas = lines.shift().trim()
-let clase = lines.shift().trim()
-let nombre = lines.shift().trim()
-
-
-if (columas == 'vertebrado' && clase == 'ave' && nombre == 'carnivoro') {
-    animal = 'aguia'
+if (columas == "vertebrado" && clase == "ave" && nombre == "carnivoro") {
+  animal = "aguia";
 }
 
-if (columas == 'vertebrado' && clase == 'ave' && nombre == 'onivoro') {
-    animal = 'pomba'
+if (columas == "vertebrado" && clase == "ave" && nombre == "onivoro") {
+  animal = "pomba";
 }
 
-
-if (columas == 'vertebrado' && clase == 'mamifero' && nombre == 'onivoro') {
-    animal = 'homem'
+if (columas == "vertebrado" && clase == "mamifero" && nombre == "onivoro") {
+  animal = "homem";
 }
 
-
-if (columas == 'vertebrado' && clase == 'mamifero' && nombre == 'herbivoro') {
-    animal = 'vaca'
+if (columas == "vertebrado" && clase == "mamifero" && nombre == "herbivoro") {
+  animal = "vaca";
 }
 
-
-if (columas == 'invertebrado' && clase == 'inseto' && nombre == 'hematofago') {
-    animal = 'pulga'
+if (columas == "invertebrado" && clase == "inseto" && nombre == "hematofago") {
+  animal = "pulga";
 }
 
-
-if (columas == 'invertebrado' && clase == 'inseto' && nombre == 'herbivoro') {
-    animal = 'lagarta'
+if (columas == "invertebrado" && clase == "inseto" && nombre == "herbivoro") {
+  animal = "lagarta";
 }
 
-
-if (columas == 'invertebrado' && clase == 'anelideo' && nombre == 'hematofago') {
-    animal = 'sanguessuga'
+if (
+  columas == "invertebrado" &&
+  clase == "anelideo" &&
+  nombre == "hematofago"
+) {
+  animal = "sanguessuga";
 }
 
-
-if (columas == 'invertebrado' && clase == 'anelideo' && nombre == 'onivoro') {
-    animal = 'minhoca'
+if (columas == "invertebrado" && clase == "anelideo" && nombre == "onivoro") {
+  animal = "minhoca";
 }
-
 
 console.log(animal);
 

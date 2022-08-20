@@ -1,6 +1,8 @@
 var input = require("fs").readFileSync("dev/stdin", "utf8");
 var lines = input.split("\n");
 
-let distancia = parseInt(lines.shift());
-
-console.log(distancia * 2 + " minutos");
+for (i = 2; i <= 100; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+}

@@ -1,30 +1,26 @@
-var input = require('fs').readFileSync('dev/stdin', 'utf8');
-var lines = input.split('\n');
+var input = require("fs").readFileSync("dev/stdin", "utf8");
+var lines = input.split("\n");
 
 let n = parseInt(lines.shift());
 
-
-let ids = {61:'Brasilia',
-71:'Salvador',
-11:'Sao Paulo',
-21:'Rio de Janeiro',
-32:'Juiz de Fora',
-19:'Campinas',
-27:'Vitoria',
-31:'Belo Horizonte'};
+let ids = {
+  61: "Brasilia",
+  71: "Salvador",
+  11: "Sao Paulo",
+  21: "Rio de Janeiro",
+  32: "Juiz de Fora",
+  19: "Campinas",
+  27: "Vitoria",
+  31: "Belo Horizonte",
+};
 
 let resultado = ids[n];
 
-if ( resultado ===  undefined) {
-     console.log('DDD nao cadastrado')
+if (resultado === undefined) {
+  console.log("DDD nao cadastrado");
+} else {
+  console.log(resultado);
 }
-
-else{
-    console.log(resultado);
-} 
-
-
-
 
 /* if (n==61){
     console.log("Brasilia")
@@ -62,6 +58,3 @@ else if (n==31){
 else{
     console.log("DDD nao cadastrado")
 } */
-
-
-
